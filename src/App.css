@@ -1,0 +1,296 @@
+:root {
+  --black: #000000;
+  --card: #030303;
+  --white: #ffffff;
+  --text: #9a9a9a;
+  --border: #242424;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #000;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.title-section {
+  padding: 55px 30px 70px;
+  text-align: center;
+}
+
+.title-section h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: #fff;
+}
+
+
+/* =========================
+   SECTION LABEL
+========================= */
+
+.section-label {
+  text-align: center;
+  color: #8d9ba5;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  margin-bottom: 55px;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px 100px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.product-card {
+  min-height: 390px;
+  padding: 38px 34px 34px;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card h2 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.product-card p {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.product-card button {
+  width: 165px;
+  height: 36px;
+
+  margin: auto auto 0;
+
+  border: none;
+  border-radius: 25px;
+
+  background: #fff;
+  color: #000;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   STRUCTURE
+========================= */
+
+.structure-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px 120px;
+}
+
+.structure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.structure-box {
+  min-width: 220px;
+  padding: 20px 28px;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  text-align: center;
+
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.arrow {
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #666;
+  font-size: 25px;
+}
+
+.asat-box {
+  min-width: 285px;
+}
+
+.structure-line {
+  position: relative;
+
+  width: 75%;
+  height: 70px;
+
+  border-top: 1px solid #555;
+
+  background:
+    linear-gradient(#555, #555) left top / 1px 70px no-repeat,
+    linear-gradient(#555, #555) 33.33% top / 1px 70px no-repeat,
+    linear-gradient(#555, #555) 66.66% top / 1px 70px no-repeat,
+    linear-gradient(#555, #555) right top / 1px 70px no-repeat;
+}
+.structure-products {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.structure-product {
+  padding: 20px 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  text-align: center;
+
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+  .title-section {
+    padding: 45px 20px 55px;
+  }
+
+  .title-section h1 {
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+
+  .products-section,
+  .structure-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-label {
+    margin-bottom: 35px;
+    letter-spacing: 5px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    min-height: 390px;
+  }
+
+  .structure-products {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .structure-line {
+    width: 80%;
+  }
+
+  .structure-product {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+}
+/* =========================
+   FOOTER
+========================= */
+
+.asat-footer {
+  padding: 30px 20px 35px;
+  text-align: center;
+  border-top: 1px solid #242424;
+}
+
+.evores-footer-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 12px;
+  cursor: pointer;
+}
+
+.asat-footer p {
+  color: #666;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: 0;
+}/* =========================
+   FOOTER
+========================= */
+
+.asat-footer {
+  padding: 25px 20px 30px;
+  text-align: center;
+  border-top: none;
+}
+
+.global-footer-icon {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+  cursor: pointer;
+}
+
+.asat-footer p {
+  color: #666;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: 0;
+}
