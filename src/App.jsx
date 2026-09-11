@@ -4,13 +4,19 @@ function App() {
   return (
     <main className="asat-page">
 
-      {/* TITLE */}
+      {/* =========================
+          TITLE
+      ========================= */}
+
       <section className="title-section">
         <h1>AS SIMPLE AS THAT [ASAT]</h1>
       </section>
 
 
-      {/* PRODUCTS */}
+      {/* =========================
+          PRODUCTS
+      ========================= */}
+
       <section className="products-section">
 
         <div className="section-label">
@@ -18,6 +24,8 @@ function App() {
         </div>
 
         <div className="products-grid">
+
+          {/* DESIGNER PARADISE */}
 
           <div className="product-card">
             <h2>DESIGNER PARADISE</h2>
@@ -36,6 +44,8 @@ function App() {
             <button>VISIT WEBSITE</button>
           </div>
 
+
+          {/* BRAND HUB */}
 
           <div className="product-card">
             <h2>BRAND HUB</h2>
@@ -56,6 +66,8 @@ function App() {
           </div>
 
 
+          {/* H&S */}
+
           <div className="product-card">
             <h2>H&amp;S</h2>
 
@@ -73,6 +85,8 @@ function App() {
             <button>VISIT WEBSITE</button>
           </div>
 
+
+          {/* FiTX */}
 
           <div className="product-card">
             <h2>FiTX</h2>
@@ -96,7 +110,10 @@ function App() {
       </section>
 
 
-      {/* STRUCTURE */}
+      {/* =========================
+          STRUCTURE
+      ========================= */}
+
       <section className="structure-section">
 
         <div className="section-label">
@@ -105,30 +122,41 @@ function App() {
 
         <div className="structure">
 
-          {/* EVORES */}
+          {/* EvoRES */}
+
           <div className="structure-box">
             EVORES TECHNOLOGY
           </div>
 
+
           {/* Arrow */}
+
           <div className="arrow">
             ↓
           </div>
 
+
           {/* ASAT */}
+
           <div className="structure-box asat-box">
             AS SIMPLE AS THAT [ASAT]
           </div>
 
-          {/* Arrow directly below ASAT */}
-          <div className="arrow asat-arrow">
+
+          {/* Arrow under ASAT */}
+
+          <div className="arrow">
             ↓
           </div>
 
-          {/* Flowchart line */}
+
+          {/* Flowchart connection */}
+
           <div className="structure-line"></div>
 
+
           {/* Products */}
+
           <div className="structure-products">
 
             <div className="structure-product">
@@ -154,60 +182,25 @@ function App() {
       </section>
 
 
-      {/* FOOTER */}
+      {/* =========================
+          FOOTER
+      ========================= */}
+
       <footer className="asat-footer">
+  <p>
+    © 2026 EvoRES Technology LLP. All Rights Reserved.
 
-        <div className="footer-content">
-
-          <p>
-            © 2026 EvoRES Technology LLP. All Rights Reserved.
-          </p>
-
-          {/* Globe → EvoRES Website */}
-          <a
-            href="https://evores-website.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit EvoRES Technology LLP"
-            className="global-link"
-          >
-            <svg
-              className="global-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="12"
-                cy="12"
-                r="9"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
-
-              <path
-                d="M3 12H21"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
-
-              <path
-                d="M12 3C14.5 5.5 15.5 8.5 15.5 12C15.5 15.5 14.5 18.5 12 21"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
-
-              <path
-                d="M12 3C9.5 5.5 8.5 8.5 8.5 12C8.5 15.5 9.5 18.5 12 21"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
-            </svg>
-          </a>
-
-        </div>
-
-      </footer>
+    <a
+      href="https://evores-website.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit EvoRES Technology LLP"
+      className="footer-globe"
+    >
+      🌐
+    </a>
+  </p>
+</footer>
 
     </main>
   );
