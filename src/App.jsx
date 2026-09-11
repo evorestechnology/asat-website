@@ -191,7 +191,7 @@ function App() {
     © 2026 EvoRES Technology LLP. All Rights Reserved.
 
     <a
-      href="https://evores-website.vercel.app/"
+      href="https://evorestechnology.com/"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Visit EvoRES Technology LLP"
