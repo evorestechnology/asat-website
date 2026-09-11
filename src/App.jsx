@@ -5,14 +5,12 @@ function App() {
     <main className="asat-page">
 
       {/* TITLE */}
-
       <section className="title-section">
         <h1>AS SIMPLE AS THAT [ASAT]</h1>
       </section>
 
 
       {/* PRODUCTS */}
-
       <section className="products-section">
 
         <div className="section-label">
@@ -99,7 +97,6 @@ function App() {
 
 
       {/* STRUCTURE */}
-
       <section className="structure-section">
 
         <div className="section-label">
@@ -108,24 +105,30 @@ function App() {
 
         <div className="structure">
 
+          {/* EVORES */}
           <div className="structure-box">
             EVORES TECHNOLOGY
           </div>
 
+          {/* Arrow */}
           <div className="arrow">
             ↓
           </div>
 
+          {/* ASAT */}
           <div className="structure-box asat-box">
-  AS SIMPLE AS THAT [ASAT]
-</div>
+            AS SIMPLE AS THAT [ASAT]
+          </div>
 
-<div className="arrow">
-  ↓
-</div>
+          {/* Arrow directly below ASAT */}
+          <div className="arrow asat-arrow">
+            ↓
+          </div>
 
-<div className="structure-line"></div>
+          {/* Flowchart line */}
+          <div className="structure-line"></div>
 
+          {/* Products */}
           <div className="structure-products">
 
             <div className="structure-product">
@@ -149,22 +152,63 @@ function App() {
         </div>
 
       </section>
-      <footer className="asat-footer">
-  <a
-    href="https://evores-website.vercel.app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Visit EvoRES Technology LLP"
-  >
-    <img
-      src="/images/global-icon.png"
-      alt="EvoRES Technology LLP"
-      className="global-footer-icon"
-    />
-  </a>
 
-  <p>© 2026 EvoRES Technology LLP. All Rights Reserved.</p>
-</footer>
+
+      {/* FOOTER */}
+      <footer className="asat-footer">
+
+        <div className="footer-content">
+
+          <p>
+            © 2026 EvoRES Technology LLP. All Rights Reserved.
+          </p>
+
+          {/* Globe → EvoRES Website */}
+          <a
+            href="https://evores-website.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit EvoRES Technology LLP"
+            className="global-link"
+          >
+            <svg
+              className="global-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+
+              <path
+                d="M3 12H21"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+
+              <path
+                d="M12 3C14.5 5.5 15.5 8.5 15.5 12C15.5 15.5 14.5 18.5 12 21"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+
+              <path
+                d="M12 3C9.5 5.5 8.5 8.5 8.5 12C8.5 15.5 9.5 18.5 12 21"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              />
+            </svg>
+          </a>
+
+        </div>
+
+      </footer>
+
     </main>
   );
 }
