@@ -41,8 +41,13 @@ function App() {
               talent with tools to launch, manage, and scale their businesses.
             </p>
 
-            <a href="https://www.designerparadise.shop/" target="_blank" rel="noopener noreferrer">
-              <button>VISIT WEBSITE</button>
+            <a 
+              href="https://www.designerparadise.shop/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="product-btn"
+            >
+              VISIT WEBSITE
             </a>
           </div>
 
@@ -64,7 +69,7 @@ function App() {
               established brands with the tools to reach consumers at scale.
             </p>
 
-            <button disabled className="coming-soon-btn">
+            <button disabled className="product-btn coming-soon-btn">
               COMING SOON
             </button>
           </div>
@@ -86,8 +91,13 @@ function App() {
               collections made for everyday wear and global fashion enthusiasts.
             </p>
 
-            <a href="https://www.hiandshi.shop/" target="_blank" rel="noopener noreferrer">
-              <button>VISIT WEBSITE</button>
+            <a 
+              href="https://www.hiandshi.shop/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="product-btn"
+            >
+              VISIT WEBSITE
             </a>
           </div>
 
@@ -108,7 +118,7 @@ function App() {
               and functionality to help people perform at their best every day.
             </p>
 
-            <button disabled className="coming-soon-btn">
+            <button disabled className="product-btn coming-soon-btn">
               COMING SOON
             </button>
           </div>
