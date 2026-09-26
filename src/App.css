@@ -112,6 +112,19 @@ body {
   letter-spacing: 1px;
 
   cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.product-card button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+/* COMING SOON DISABLED BUTTON STYLE */
+.product-card button.coming-soon-btn {
+  background: #161616;
+  color: #666;
+  border: 1px solid var(--border);
+  cursor: not-allowed;
 }
 
 
@@ -238,6 +251,7 @@ body {
   cursor: pointer;
   vertical-align: middle;
 }
+
 /* =========================
    MOBILE
 ========================= */
@@ -305,13 +319,6 @@ body {
 
   .asat-footer {
     padding: 18px 15px 25px;
-  }
-
-  .global-footer-icon {
-    width: 50px !important;
-    height: 50px !important;
-    max-width: 50px !important;
-    max-height: 50px !important;
   }
 
   .asat-footer p {
