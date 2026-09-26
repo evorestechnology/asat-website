@@ -64,9 +64,9 @@ function App() {
               established brands with the tools to reach consumers at scale.
             </p>
 
-            <a href="#" onclick="return false;" style="cursor: default; text-decoration: none;">
-              <button style="cursor: pointer;">COMING SOON</button>
-            </a>
+            <button disabled className="coming-soon-btn">
+              COMING SOON
+            </button>
           </div>
 
 
@@ -108,9 +108,9 @@ function App() {
               and functionality to help people perform at their best every day.
             </p>
 
-            <a href="#" onclick="return false;" style="cursor: default; text-decoration: none;">
-              <button style="cursor: pointer;">COMING SOON</button>
-            </a>
+            <button disabled className="coming-soon-btn">
+              COMING SOON
+            </button>
           </div>
 
         </div>
@@ -195,20 +195,20 @@ function App() {
       ========================= */}
 
       <footer className="asat-footer">
-  <p>
-    © 2026 EvoRES Technology LLP. All Rights Reserved.
+        <p>
+          © 2026 EvoRES Technology LLP. All Rights Reserved.
 
-    <a
-      href="https://evorestechnology.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Visit EvoRES Technology LLP"
-      className="footer-globe"
-    >
-      🌐
-    </a>
-  </p>
-</footer>
+          <a
+            href="https://evorestechnology.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit EvoRES Technology LLP"
+            className="footer-globe"
+          >
+            🌐
+          </a>
+        </p>
+      </footer>
 
     </main>
   );
